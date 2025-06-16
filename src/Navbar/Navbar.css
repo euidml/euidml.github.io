@@ -4,8 +4,8 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -21,6 +21,6 @@
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  /* background: #FFFF; */
-  /* color: #00BBCC; */
+  background: #FFFF;
+  color: #00BBCC;
 }

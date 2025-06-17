@@ -5,9 +5,12 @@ import NavBar from "./Navbar/Navbar";
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar/>
       <div className="App">
         <p className="description">Hi this is Sabriana</p>
+        <img src={edward} />
+        <img src={edward} />
+        <img src={edward} />
         <img src={edward} />
       </div>
     </>

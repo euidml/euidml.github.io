@@ -1,0 +1,13 @@
+#about_me {
+    padding-top: 50px;
+    width: 100%; /* Full width */
+    display: flex;
+}
+#profile_picture {
+    width: 50%;
+}
+#biography {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

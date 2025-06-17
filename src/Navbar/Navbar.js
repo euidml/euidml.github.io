@@ -35,14 +35,15 @@ function NavBar(){
     
     return (
         <div id="navbar" className={scrolled ? "scrolled" : ""}>
-            {/* {
-                elements.map((e) =>{
-
-                })
-            } */}
-            <Element value={elements[0]} onElementClick={() => {handleClick(elements[0])}}/>
-            <Element value={elements[1]} onElementClick={() => {handleClick(elements[1])}}/>
-            <Element value={elements[2]} onElementClick={() => {handleClick(elements[2])}}/>
+            {elements.map((el) => (
+                <Element
+                    key={el}
+                    value={el}
+                    onElementClick={() => {
+                        handleClick(el)
+                    }}
+                />
+            ))}
         </div>
     );
 }

@@ -23,6 +23,10 @@
   text-decoration: none;
 }
 
+#inner_navbar .selected{
+    border-bottom: 3px solid #00BBCC;
+}
+
 #inner_navbar a:hover {
   background: #FFFF;
   color: #00BBCC;
@@ -39,3 +43,4 @@
     margin: 20px;
     width: 300px;
 }
+

@@ -58,16 +58,16 @@
 }
 .project#circle{
   height: 575px;
-  background-image: url("../images/_circle_view_detail.png");
+  background-image: url("../images/circle_view_detail.png");
 }
 .project#noom{
   height: 176px;
-  background-image: url("../images/_noom_view_detail.png");
+  background-image: url("../images/noom_view_detail.png");
   
 }
 .project#simple_python_game{
   height: 279px;
-  background-image: url("../images/_simple_python_game_view_detail.png");
+  background-image: url("../images/simple_python_game_view_detail.png");
 }
 
 .project a{

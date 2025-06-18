@@ -1,0 +1,52 @@
+#about_me {
+    padding-top: 10%;
+    width: 100%; /* Full width */
+    display: flex;
+}
+#profile_picture {
+    width: 50%;
+    margin-right: 5%;
+}
+#profile_picture img {
+    float: right;
+}
+#biography {
+    width: 50%;
+    display: block;
+    justify-content: center;
+    margin-left: 5%;
+}
+#biography h1{
+    justify-self: center;
+    margin-right: 20%;
+}
+#biography p{
+    margin-right: 20%;
+    font-size:14px;
+}
+#tech_stacks {
+    margin-top: 5%;
+    margin-right: 20%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.tech_stack {
+   text-decoration: none;
+    color: black;
+    margin-right: 5%;
+    float: left;
+    text-align: center;
+    padding: 8px 10px;
+    border: 1px solid #00BBCC;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+#external_links {
+    margin-right: 20%;
+    margin-top: 5%; 
+}
+#external_links a{
+    margin-right: 40px;
+}

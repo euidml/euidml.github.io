@@ -6,12 +6,12 @@ function Experiece(){
             <div id="experience">
                 <div id="work_experience">
                     <h1>
-                        Work Experiece
+                        Work Experiece🗒️
                     </h1>
                 </div>
                 <div id="education">
                     <h1>
-                        Education
+                        Education📚
                     </h1>
                 </div>
 

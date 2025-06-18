@@ -1,0 +1,41 @@
+#portfolio {
+    margin-top: 10%;
+    width: 100%;
+    display: block;
+    
+}
+
+#portfolio h1 {
+    justify-self: center;
+}
+
+#inner_navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#inner_navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#inner_navbar a:hover {
+  background: #FFFF;
+  color: #00BBCC;
+}
+
+#projects {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#projects img {
+    margin: 20px;
+    width: 300px;
+}

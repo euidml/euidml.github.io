@@ -1,0 +1,16 @@
+#experience {
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+}
+#work_experience {
+    width: 50%;
+    
+}
+#work_experience h1{
+    float: right;
+    margin-right: 30%;
+}
+#education{
+    margin-left: 5%;
+}

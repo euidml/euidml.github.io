@@ -4,11 +4,11 @@ import circle from "../images/circle.png"
 import noom from "../images/noom.png"
 import simple_python_game from "../images/simple_python_game.png"
 
-function Element({value, className}){
+function Element({value, className, onElementClick}){
     return(
-        <div className={className}>
+        <div className={className} onClick={onElementClick}>
             <a href={`#${value}`} >
-            {value}
+                {value}
             </a>
         </div>
         
@@ -21,6 +21,11 @@ function Portfolio(){
     const [currentCategory, setCurrentCategory] = useState("All Categories")
     const categories = ["All Categories", "Web Development", "Game"]
     const projectImages = [circle, noom, simple_python_game]
+
+    function handleClick(value){
+        console.log(value)
+    }
+
     return(
         <>
             <div id="portfolio">
@@ -34,6 +39,9 @@ function Portfolio(){
                                 key={el}
                                 value={el}
                                 className={currentCategory === el ? "selected" : ""}
+                                onElementClick={() => {
+                                    handleClick(el)
+                                }}
                             />
                         ))
                     }

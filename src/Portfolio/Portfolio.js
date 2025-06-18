@@ -30,10 +30,11 @@ function Portfolio(){
         console.log("Hi")
         if (currentCategory === "All Categories"){
             projectImages = [circle, noom, simple_python_game]
+        }else if(currentCategory === "Web Development"){
+            projectImages = [circle, noom]
         }else{
-            projectImages = []
+            projectImages = [simple_python_game]
         }
-        
         return(
                 projectImages.map((img) => (
                     <div>

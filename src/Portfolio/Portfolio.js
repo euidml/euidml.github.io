@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Portfolio.css";
-import circle from "../images/_circle.png"
-import noom from "../images/_noom.png"
-import simple_python_game from "../images/_simple_python_game.png"
+import circle from "../images/circle.png"
+import noom from "../images/noom.png"
+import simple_python_game from "../images/simple_python_game.png"
 
 function Element({value, className, onElementClick}){
     return(

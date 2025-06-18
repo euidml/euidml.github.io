@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Portfolio.css";
 import circle from "../images/circle.png"
 import noom from "../images/noom.png"
@@ -20,11 +20,29 @@ function Element({value, className, onElementClick}){
 function Portfolio(){
     const [currentCategory, setCurrentCategory] = useState("All Categories")
     const categories = ["All Categories", "Web Development", "Game"]
-    const projectImages = [circle, noom, simple_python_game]
+    let projectImages = []
 
     function handleClick(value){
-        setCurrentCategory(value)
+        setCurrentCategory(value);
+        // console.log(currentCategory)
     }
+    const select = (() => {
+        console.log("Hi")
+        if (currentCategory === "All Categories"){
+            projectImages = [circle, noom, simple_python_game]
+        }else{
+            projectImages = []
+        }
+        
+        return(
+                projectImages.map((img) => (
+                    <div>
+                        <img src={img}/>
+                    </div>
+                ))   
+        );
+    });
+
 
     return(
         <>
@@ -47,13 +65,7 @@ function Portfolio(){
                     }
                 </div>
                 <div id="projects">
-                    {
-                       projectImages.map((img) => (
-                            <div>
-                                <img src={img}/>
-                            </div>
-                       ))
-                    }
+                    {select()}
                 </div>
             </div>
         </>

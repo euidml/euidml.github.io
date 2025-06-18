@@ -14,6 +14,34 @@ function ExperieceCard({name, description}){
 }
 
 function Experiece(){
+    const workExperience = [
+        {
+            "name": "Tree House Toys",
+            "description": "Customer Service Representitive, 2023"
+        },
+        {
+            "name": "Best Buy",
+            "description": "Product Process Specialist, 2022"
+        },
+        {
+            "name": "Starbucks",
+            "description": "Barista, 2022"
+        },
+        {
+            "name": "Best Buy",
+            "description": "Product Process Specialist, 2021"
+        },
+    ]
+    const education = [
+        {
+            "name": "Simon Fraser University",
+            "description": "2nd year BSc in Computing Science, In Progress"
+        },
+        {
+            "name": "Langara College",
+            "description": "Associate Degree of Science in Computer Science"
+        },
+    ]
     return(
         <>
             <div id="experience">
@@ -21,32 +49,29 @@ function Experiece(){
                     <h1>
                         Work Experiece🗒️
                     </h1>
-                
-                    <ExperieceCard
-                        key="Tree House Toys"
-                        name="Tree House Toys"
-                        description="Customer Service Representitive, 2023"
-                    />
-                    <ExperieceCard
-                        key="Tree House Toys"
-                        name="Tree House Toys"
-                        description="Customer Service Representitive, 2023"
-                    />
+                    {
+                        workExperience.map((obj) => (
+                            <ExperieceCard
+                                key={obj["name"]}
+                                name={obj["name"]}
+                                description={obj["description"]}
+                            />
+                        ))
+                    }
                 </div>
                 <div id="education">
                     <h1>
                         Education📚
                     </h1>
-                    <ExperieceCard
-                        key="Simon Fraser University"
-                        name="Simon Fraser University"
-                        description="2nd year BSc in Computing Science, In Progress"
-                    />
-                    <ExperieceCard
-                        key="Simon Fraser University"
-                        name="Simon Fraser University"
-                        description="2nd year BSc in Computing Science, In Progress"
-                    />
+                    {
+                        education.map((obj) => (
+                            <ExperieceCard
+                                key={obj["name"]}
+                                name={obj["name"]}
+                                description={obj["description"]}
+                            />
+                        ))
+                    }
                 </div>
 
             </div>

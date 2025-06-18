@@ -2,6 +2,7 @@
 import "./App.css";
 import NavBar from "./Navbar/Navbar";
 import About from "./About/About";
+import Experience from "./Experience/Experience";
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <NavBar/>
       <About/>
+      <Experience/>
     </>
   );
 }

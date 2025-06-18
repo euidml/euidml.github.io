@@ -27,6 +27,11 @@ function Experiece(){
                         name="Tree House Toys"
                         description="Customer Service Representitive, 2023"
                     />
+                    <ExperieceCard
+                        key="Tree House Toys"
+                        name="Tree House Toys"
+                        description="Customer Service Representitive, 2023"
+                    />
                 </div>
                 <div id="education">
                     <h1>
@@ -35,7 +40,12 @@ function Experiece(){
                     <ExperieceCard
                         key="Simon Fraser University"
                         name="Simon Fraser University"
-                        description="Simon Fraser University 2nd year BSc in Computing Science, In Progress"
+                        description="2nd year BSc in Computing Science, In Progress"
+                    />
+                    <ExperieceCard
+                        key="Simon Fraser University"
+                        name="Simon Fraser University"
+                        description="2nd year BSc in Computing Science, In Progress"
                     />
                 </div>
 

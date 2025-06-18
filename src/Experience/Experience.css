@@ -4,25 +4,35 @@
     display: flex;
 }
 #work_experience {
-    width: 50%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin-right: 5%;
+    margin-left: 20%;
 }
 #work_experience h1{
-     margin-right: 30%;
-    text-align: right; 
-    width: auto;
+    margin-right: 30%; 
+    margin-left: 0;
+    text-align: left;
+    width: fit-content;
 }
 #education{
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
 }
 .experience_card{
-    padding: 3% 5% 3% 0%;
-    /* float: right; */
-    align-self: flex-end;
+    margin: 5% 0;
+    width: 400px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    color: #00BBCC;
+    border-radius: 8px;
+}
+.experience_card .company_name{
+    font-size: large;
+    color: black;
 }
 #work_experience .experience_card{
-    /* margin-right: auto; */
+    margin-right: 3%;
 }

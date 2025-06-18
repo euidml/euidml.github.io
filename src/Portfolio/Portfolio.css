@@ -49,8 +49,36 @@
     justify-content: center;
 }
 
+.project{
+  margin: 50px;
+  overflow: hidden;
+  margin-bottom: auto;
+  border-radius: 25px;
+  background-color: #00BBCC;
+}
+.project#circle{
+  height: 575px;
+  background-image: url("../images/_circle_view_detail.png");
+}
+.project#noom{
+  height: 176px;
+  background-image: url("../images/_noom_view_detail.png");
+  
+}
+.project#simple_python_game{
+  height: 279px;
+  background-image: url("../images/_simple_python_game_view_detail.png");
+}
+
+.project a{
+    text-decoration: none;
+}
+
 #projects img {
-    margin: 20px;
     width: 300px;
 }
 
+
+#projects img:hover{
+  filter:opacity(0.3);
+}

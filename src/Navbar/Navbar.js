@@ -3,21 +3,24 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css'
 
-function Element({value, onElementClick}){
+function Element({value, className, onElementClick}){
     return(
-        <a href={`#${value}`} onClick={onElementClick}>
-            {value.charAt(0).toUpperCase() + value.slice(1)}
-        </a>
+        <div className={className} onClick={onElementClick}>
+            <button>
+                {value}
+            </button>
+        </div>
+        
     );
 }
 
 function NavBar(){
+    const [currentCategory, setCurrentCategory] = useState("about")
     const [scrolled, setScrolled] = useState(false);
-    const elements = ["about", "experience", "portfolio"]; // Don't need useState for static list
+    const categories = ["about", "experience", "portfolio"];
 
     function handleClick(value){
-        // TODO: make the page explorable by navbar
-        //pass
+        setCurrentCategory(value);
     }
 
     useEffect(() => {
@@ -35,15 +38,18 @@ function NavBar(){
     
     return (
         <div id="navbar" className={scrolled ? "scrolled" : ""}>
-            {elements.map((el) => (
-                <Element
-                    key={el}
-                    value={el}
-                    onElementClick={() => {
-                        handleClick(el)
-                    }}
-                />
-            ))}
+            {
+                categories.map((el)=>(
+                    <Element
+                        key={el}
+                        value={el}
+                        className={currentCategory === el ? "selected" : ""}
+                        onElementClick={() => {
+                            handleClick(el)
+                        }}
+                    />
+                ))
+            }
         </div>
     );
 }

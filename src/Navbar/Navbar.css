@@ -1,22 +1,39 @@
 #navbar {
   overflow: hidden;
   background-color: #FFFFFF;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  /* aligning the elements into center*/
+  position: fixed;
+  top: 0;
+  width: 100%; 
   display: flex;
   justify-content: center;
+  padding: 15px;
 
 
+}
+
+#navbar button {
+  float: left;
+  display: block;
+  color: black;
+  background-color: #FFFF;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: large;
+  box-shadow: none;
+  border: none;
 }
 
 #navbar.scrolled{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
 }
 
+#navbar .selected{
+    border-bottom: 2px solid #00BBCC;
+}
+
 /* Links inside the navbar */
-#navbar a {
+#navbar button {
   float: left;
   display: block;
   color: black;
@@ -25,8 +42,6 @@
   text-decoration: none;
 }
 
-/* Change background on mouse-over */
-#navbar a:hover {
-  background: #FFFF;
+#navbar button:hover {
   color: #00BBCC;
 }

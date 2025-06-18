@@ -16,15 +16,16 @@ function Element({value, className, onElementClick}){
 
 function NavBar(){
     const [currentCategory, setCurrentCategory] = useState("about")
+    const [turnOffTab, setTurnOffTab] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const categories = ["about", "experience", "portfolio"];
 
     function handleClick(value){
         setCurrentCategory(value);
         if (value === "about"){
-            document.getElementById("about").scrollIntoView({behavior:"smooth", block:"start" , inline:"start"})
+            document.getElementById("about").scrollIntoView({behavior:"smooth", block:"center" , inline:"start"})
         }else if (value === "experience"){
-            document.getElementById("experience").scrollIntoView({behavior:"smooth", block:"start" , inline:"start"})
+            document.getElementById("experience").scrollIntoView({behavior:"smooth", block:"center" , inline:"start"})
         }else if (value === "portfolio"){
             document.getElementById("portfolio").scrollIntoView({behavior:"smooth", block:"start" , inline:"start"})
         }
@@ -37,18 +38,18 @@ function NavBar(){
             } else {
                 setScrolled(false);
             }
-            const about_location_bottom = document.getElementById("about").getBoundingClientRect().bottom
-            const experience_location_bottom = document.getElementById("experience").getBoundingClientRect().bottom
-            // const portfolio_location_top = document.getElementById("portfolio").getBoundingClientRect().top
+            const about_location_height = document.getElementById("about").getBoundingClientRect().height
+            const experience_location_height = about_location_height + document.getElementById("experience").getBoundingClientRect().height
             
-            
-            if (window.scrollY < about_location_bottom ){
+            if (window.scrollY <= about_location_height ){
                 setCurrentCategory("about")
-            } else if( window.scrollY >= about_location_bottom && window.scrollY < experience_location_bottom ){
-                 setCurrentCategory("experience")
-            }else if(window.scrollY >= experience_location_bottom){
+            } else if( window.scrollY > about_location_height && window.scrollY <= experience_location_height ){
+                setCurrentCategory("experience")
+            }else if(window.scrollY > experience_location_height){
                 setCurrentCategory("portfolio")
             }
+        
+            
 
         };
 

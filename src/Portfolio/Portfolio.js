@@ -7,9 +7,9 @@ import simple_python_game from "../images/simple_python_game.png"
 function Element({value, className, onElementClick}){
     return(
         <div className={className} onClick={onElementClick}>
-            <a href={`#${value}`} >
+            <button>
                 {value}
-            </a>
+            </button>
         </div>
         
     );
@@ -23,7 +23,7 @@ function Portfolio(){
     const projectImages = [circle, noom, simple_python_game]
 
     function handleClick(value){
-        console.log(value)
+        setCurrentCategory(value)
     }
 
     return(

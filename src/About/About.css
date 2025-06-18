@@ -25,11 +25,27 @@
     font-size:14px;
 }
 #tech_stacks {
+    margin-top: 5%;
     margin-right: 20%;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
+
+.tech_stack {
+   text-decoration: none;
+    color: black;
+    margin-right: 5%;
+    float: left;
+    text-align: center;
+    padding: 8px 10px;
+    border: 1px solid #00BBCC;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
 #external_links {
     margin-right: 20%;
-    margin-top: 10%; 
+    margin-top: 5%; 
 }
 #external_links a{
     margin-right: 40px;

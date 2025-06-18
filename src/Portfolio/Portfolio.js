@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Portfolio.css";
-import circle from "../images/circle.png"
-import noom from "../images/noom.png"
-import simple_python_game from "../images/simple_python_game.png"
+import circle from "../images/_circle.png"
+import noom from "../images/_noom.png"
+import simple_python_game from "../images/_simple_python_game.png"
 
 function Element({value, className, onElementClick}){
     return(
@@ -19,12 +19,51 @@ function Element({value, className, onElementClick}){
 
 function Portfolio(){
     const [currentCategory, setCurrentCategory] = useState("All Categories")
+    // const [projects, setProjects] = useState(Array())
     const categories = ["All Categories", "Web Development", "Game"]
-    const projectImages = [circle, noom, simple_python_game]
+    let projects = []
+    const projectImageAndLink = {
+        "circle":{
+            "image":circle,
+            "link":"#"
+        },
+        "noom":{
+            "image":noom,
+            "link":"#"
+        },
+        "simple_python_game":{
+            "image":simple_python_game,
+            "link":"#"
+        },
+    }
 
     function handleClick(value){
-        setCurrentCategory(value)
+        setCurrentCategory(value);
     }
+
+    const select = (() => {
+        console.log("Hi")
+        if (currentCategory === "All Categories"){
+            projects = ["circle","noom","simple_python_game"]
+        }else if(currentCategory === "Web Development"){
+            projects = ["circle","noom"]
+        }else{
+            projects = ["simple_python_game"]
+        }
+        return(
+                projects.map((project) => (
+                    <div id={project} className="project">
+                        <a href={projectImageAndLink[project]["link"]}>
+                            <img src={projectImageAndLink[project]["image"]}/>
+                            <h2>
+                                View detail
+                            </h2>
+                        </a>
+                    </div>
+                ))   
+        );
+    });
+
 
     return(
         <>
@@ -47,13 +86,7 @@ function Portfolio(){
                     }
                 </div>
                 <div id="projects">
-                    {
-                       projectImages.map((img) => (
-                            <div>
-                                <img src={img}/>
-                            </div>
-                       ))
-                    }
+                    {select()}
                 </div>
             </div>
         </>

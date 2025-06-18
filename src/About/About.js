@@ -39,7 +39,7 @@ function About(){
                         "An overview of my past experiences is provided below."];
     return(
         <>
-            <div id="about_me">
+            <div id="about">
                 <div id="profile_picture">
                     <img src={profile} />
                 </div>

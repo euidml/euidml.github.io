@@ -21,6 +21,13 @@ function NavBar(){
 
     function handleClick(value){
         setCurrentCategory(value);
+        if (value === "about"){
+            document.getElementById("about").scrollIntoView({behavior:"smooth", block:"start" , inline:"start"})
+        }else if (value === "experience"){
+            document.getElementById("experience").scrollIntoView({behavior:"smooth", block:"start" , inline:"start"})
+        }else if (value === "portfolio"){
+            document.getElementById("portfolio").scrollIntoView({behavior:"smooth", block:"start" , inline:"start"})
+        }
     }
 
     useEffect(() => {

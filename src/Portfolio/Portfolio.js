@@ -1,21 +1,31 @@
+import { useState } from "react";
 import "./Portfolio.css";
 import circle from "../images/circle.png"
 import noom from "../images/noom.png"
 import simple_python_game from "../images/simple_python_game.png"
 
-function Element({value}){
+function Element({value, className, onElementClick}){
     return(
-        <a href={`#${value}`}>
-            {value}
-        </a>
+        <div className={className} onClick={onElementClick}>
+            <button>
+                {value}
+            </button>
+        </div>
+        
     );
 }
 
 
 
 function Portfolio(){
+    const [currentCategory, setCurrentCategory] = useState("All Categories")
     const categories = ["All Categories", "Web Development", "Game"]
     const projectImages = [circle, noom, simple_python_game]
+
+    function handleClick(value){
+        setCurrentCategory(value)
+    }
+
     return(
         <>
             <div id="portfolio">
@@ -28,6 +38,10 @@ function Portfolio(){
                             <Element
                                 key={el}
                                 value={el}
+                                className={currentCategory === el ? "selected" : ""}
+                                onElementClick={() => {
+                                    handleClick(el)
+                                }}
                             />
                         ))
                     }

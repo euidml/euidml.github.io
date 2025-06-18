@@ -39,7 +39,7 @@ function About(){
                     <img src={profile} />
                 </div>
                 <div id="biography">
-                    <h2> About Me 🧑🏻‍💻 </h2>
+                    <h1> About Me 🧑🏻‍💻 </h1>
                     {
                         description.map((el) => (
                             <p key={el}>{el}</p>

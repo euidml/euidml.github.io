@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   padding: 15px;
-
+  z-index: 1000;
 }
 
 #navbar button {

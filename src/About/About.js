@@ -38,8 +38,8 @@ function About(){
                     <div id="external_links">
                         {
                            Object.keys(imageFiles).map((key) => (
-                                    <a href={imageFiles[key][1]}>
-                                    <img className="external_link" key={key} src={imageFiles[key][0]}/>
+                                    <a key={key} href={imageFiles[key][1]}>
+                                        <img className="external_link" src={imageFiles[key][0]}/>
                                     </a>
                             
                             ))

@@ -25,7 +25,7 @@ function Experiece(){
                     {
                         workExperience.map((obj) => (
                             <ExperieceCard
-                                key={obj[Object.keys(obj)[0]]}
+                                key={obj[Object.keys(obj)[1]]}
                                 name={obj[Object.keys(obj)[0]]}
                                 description={obj[Object.keys(obj)[1]]}
                             />

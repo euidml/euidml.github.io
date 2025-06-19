@@ -69,14 +69,17 @@ export const port_categories = ["All Categories", "Web Development", "Game"];
 export const projectImageAndLink = {
         "circle":{
             "image":circle,
-            "link":"#"
+            "link":"#",
+            "description":"This is one of my project for web develoment with React.js"
         },
         "noom":{
             "image":noom,
-            "link":"#"
+            "link":"#",
+            "description":"This is one of my project for web develoment with WebRTC and Socket.IO"
         },
         "simple_python_game":{
             "image":simple_python_game,
-            "link":"#"
+            "link":"#",
+            "description":"This is one of my project for simple game implementation with Python"
         },
     };

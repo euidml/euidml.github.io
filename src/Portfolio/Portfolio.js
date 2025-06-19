@@ -25,7 +25,7 @@ function Portfolio(){
                 projects.map((project) => (
                     <div id={project} className="project">
                         <a href={projectImageAndLink[project][propertyKeys[1]]}>
-                            <img src={projectImageAndLink[project][propertyKeys[0]]}/>
+                            <img src={projectImageAndLink[project][propertyKeys[0]]} alt={projectImageAndLink[project][propertyKeys[2]]}/>
                         </a>
                     </div>
                 ))   

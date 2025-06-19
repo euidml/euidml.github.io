@@ -18,15 +18,15 @@
 }
 #biography h1{
     justify-self: center;
-    margin-right: 20%;
+    margin-right: 30%;
 }
 #biography p{
-    margin-right: 20%;
+    margin-right: 30%;
     font-size:14px;
 }
 #tech_stacks {
     margin-top: 5%;
-    margin-right: 20%;
+    margin-right: 30%;
     overflow: hidden;
     flex-wrap: wrap;
 }
@@ -44,7 +44,7 @@
 }
 
 #external_links {
-    margin-right: 20%;
+    margin-right: 30%;
     margin-top: 5%; 
 }
 #external_links a{

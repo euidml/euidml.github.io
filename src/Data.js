@@ -23,12 +23,12 @@ export const imageFiles = {"octicon": [octicon, "https://github.com/euidml"],
         "instagram": [instagram, ""]
     };
 export const techStacks = {
-        "Python":"",
-        "Java":"",
-        "MySQL":"",
-        "JavaScript":"",
-        "Node.js":"",
-        "React.js":""
+        "Python":"https://www.python.org/",
+        "Java":"https://www.java.com/en/",
+        "MySQL":"https://dev.mysql.com/doc/",
+        "JavaScript":"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "Node.js":"https://nodejs.org/docs/latest/api/",
+        "React.js":"https://react.dev/"
     };
 export const description = ["Hi! Welcome to my personal website. My name is Edward, and I’m a software developer from Vancouver, Canada.",
                         "I’ve studied Computer Science at Simon Frasers University, and I’m currently seeking my first software developer co-op position. In my free time, I like to travel, watch movies, play instruments.",
@@ -69,17 +69,17 @@ export const port_categories = ["All Categories", "Web Development", "Game"];
 export const projectImageAndLink = {
         "circle":{
             "image":circle,
-            "link":"#",
+            "link":"https://github.com/euidml",
             "description":"This is one of my project for web develoment with React.js"
         },
         "noom":{
             "image":noom,
-            "link":"#",
+            "link":"https://github.com/euidml",
             "description":"This is one of my project for web develoment with WebRTC and Socket.IO"
         },
         "simple_python_game":{
             "image":simple_python_game,
-            "link":"#",
+            "link":"https://github.com/euidml",
             "description":"This is one of my project for simple game implementation with Python"
         },
     };

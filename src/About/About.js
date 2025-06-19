@@ -1,15 +1,7 @@
-import { useEffect, useState } from "react";
+import {profile, imageFiles, techStacks, description } from "../Data";
 import './About.css';
 
-// Import images
-import profile from "../images/profile.png";
-import cv from "../images/cv.svg";
-import facebook from "../images/facebook.svg";
-import instagram from "../images/instagram.svg";
-import linkedin from "../images/linkedin.svg";
-import octicon from "../images/octicon.svg";
-
-
+// to show the tech stacks
 function TechStack({value, link}){
     return(
             <a className="tech_stack" href={link}>
@@ -19,24 +11,6 @@ function TechStack({value, link}){
 }
 
 function About(){
-    // const imageFiles = [octicon, linkedin, cv, facebook, instagram];
-    const imageFiles = {"octicon": [octicon, "https://github.com/euidml"], 
-        "linkedin": [linkedin, ""],
-        "cv": [cv, ""], 
-        "facebook": [facebook, ""],
-        "instagram": [instagram, ""]
-    };
-    const techStacks = {
-        "Python":"",
-        "Java":"",
-        "MySQL":"",
-        "JavaScript":"",
-        "Node.js":"",
-        "React.js":""
-    };
-    const description = ["Hi! Welcome to my personal website. My name is Edward, and I’m a software developer from Vancouver, Canada.",
-                        "I’ve studied Computer Science at Simon Frasers University, and I’m currently seeking my first software developer co-op position. In my free time, I like to travel, watch movies, play instruments.",
-                        "An overview of my past experiences is provided below."];
     return(
         <>
             <div id="about">
@@ -60,7 +34,6 @@ function About(){
                                 />
                             ))
                         }
-                        {/* here is for techstacks */}
                     </div>
                     <div id="external_links">
                         {

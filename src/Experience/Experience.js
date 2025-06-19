@@ -1,3 +1,4 @@
+import {workExperience, education} from "../Data"
 import "./Experience.css";
 
 function ExperieceCard({name, description}){
@@ -14,34 +15,6 @@ function ExperieceCard({name, description}){
 }
 
 function Experiece(){
-    const workExperience = [
-        {
-            "name": "Tree House Toys",
-            "description": "Customer Service Representitive, 2023"
-        },
-        {
-            "name": "Best Buy",
-            "description": "Product Process Specialist, 2022"
-        },
-        {
-            "name": "Starbucks",
-            "description": "Barista, 2022"
-        },
-        {
-            "name": "Best Buy",
-            "description": "Product Process Specialist, 2021"
-        },
-    ]
-    const education = [
-        {
-            "name": "Simon Fraser University",
-            "description": "2nd year BSc in Computing Science, In Progress"
-        },
-        {
-            "name": "Langara College",
-            "description": "Associate Degree of Science in Computer Science"
-        },
-    ]
     return(
         <>
             <div id="experience">
@@ -52,9 +25,9 @@ function Experiece(){
                     {
                         workExperience.map((obj) => (
                             <ExperieceCard
-                                key={obj["name"]}
-                                name={obj["name"]}
-                                description={obj["description"]}
+                                key={obj[Object.keys(obj)[0]]}
+                                name={obj[Object.keys(obj)[0]]}
+                                description={obj[Object.keys(obj)[1]]}
                             />
                         ))
                     }
@@ -66,9 +39,9 @@ function Experiece(){
                     {
                         education.map((obj) => (
                             <ExperieceCard
-                                key={obj["name"]}
-                                name={obj["name"]}
-                                description={obj["description"]}
+                                key={obj[Object.keys(obj)[0]]}
+                                name={obj[Object.keys(obj)[0]]}
+                                description={obj[Object.keys(obj)[1]]}
                             />
                         ))
                     }

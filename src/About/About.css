@@ -9,6 +9,7 @@
 }
 #profile_picture img {
     float: right;
+    /* box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1); */
 }
 #biography {
     width: 50%;
@@ -18,15 +19,15 @@
 }
 #biography h1{
     justify-self: center;
-    margin-right: 30%;
+    margin-right: 40%;
 }
 #biography p{
-    margin-right: 30%;
+    margin-right: 40%;
     font-size:14px;
 }
 #tech_stacks {
     margin-top: 5%;
-    margin-right: 30%;
+    margin-right: 40%;
     overflow: hidden;
     flex-wrap: wrap;
 }
@@ -44,7 +45,7 @@
 }
 
 #external_links {
-    margin-right: 30%;
+    margin-right: 40%;
     margin-top: 5%; 
 }
 #external_links a{

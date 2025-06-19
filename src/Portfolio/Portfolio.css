@@ -55,6 +55,7 @@
   margin-bottom: auto;
   border-radius: 25px;
   background-color: #00BBCC;
+  /* box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1); */
 }
 .project#circle{
   height: 575px;
@@ -78,6 +79,9 @@
     width: 300px;
 }
 
+/* #projects :hover {
+  box-shadow: none;
+} */
 
 #projects img:hover{
   filter:opacity(0.3);
